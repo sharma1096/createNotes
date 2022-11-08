@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="Botstrap.css" />
+    <style>
+      .body {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+      }
+      .heading {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        padding-left: 14px;
+        font-size: 2rem;
+      }
+      .addNote {
+        padding-left: 14px;
+      }
+      #notes {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        padding-left: 14px;
+      }
+    </style>
+    <title>Project_1</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Magic Notes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              id="searchBox"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search Notes"
+              aria-label="Search"
+            />
+            <button
+              id="searchBtn"
+              class="btn btn-outline-success ml-1"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- body -->
+    <div class="heading">
+      <p>Welcome to Magic Notes</p>
+    </div>
+    <div class="body">
+      <form class="addNote">
+        <div class="mb-1">
+          <label for="exampleInputPassword1" class="form-label"
+            ><h5 style="margin-bottom: 0px">Add Note</h5></label
+          >
+          <textarea
+            class="form-control"
+            name="textArea"
+            id="textArea"
+            cols="115"
+            rows="3"
+          ></textarea>
+        </div>
+        <button type="submit" id="addBtn" class="btn btn-primary mb-1 mt-1">
+          Add Note
+        </button>
+      </form>
+    </div>
+    <!-- notes heading  -->
+    <div class="heading">
+      <p class="border-bottom">Your Notes</p>
+    </div>
+    <!-- showing notes  -->
+    <div class="row" id="notes">
+      <!-- notes is injected here by javascript -->
+    </div>
+  </body>
+  <script src="tut22.js"></script>
+</html>
+
+<!--  -->
